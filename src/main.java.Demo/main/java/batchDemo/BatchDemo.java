@@ -20,7 +20,7 @@ public class BatchDemo {
         SparkConf conf = new SparkConf().setAppName(BatchDemo.class.getName()).setMaster(master);
         JavaSparkContext context = new JavaSparkContext(conf);
 
-
+        // should rename the context for future tests
         context.textFile("test")
                 .flatMap(text -> Arrays.asList(text.split(" ")).iterator())
                 .mapToPair(word ->new Tuple2<>(word,1))
