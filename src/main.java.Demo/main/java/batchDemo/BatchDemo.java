@@ -21,6 +21,7 @@ public class BatchDemo {
         JavaSparkContext context = new JavaSparkContext(conf);
 
         // should rename the context for future tests
+        //added more
         context.textFile("test")
                 .flatMap(text -> Arrays.asList(text.split(" ")).iterator())
                 .mapToPair(word ->new Tuple2<>(word,1))
