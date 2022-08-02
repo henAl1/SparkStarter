@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Created by henok on 9/4/2017.
+ * prak
  */
 public class BatchDemo {
 
@@ -21,7 +22,7 @@ public class BatchDemo {
         JavaSparkContext context = new JavaSparkContext(conf);
 
         // should rename the context for future tests
-        //added more
+        //added more things
         // 9/4/2017
         context.textFile("test")
                 .flatMap(text -> Arrays.asList(text.split(" ")).iterator())
