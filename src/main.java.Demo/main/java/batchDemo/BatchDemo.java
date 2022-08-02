@@ -22,6 +22,7 @@ public class BatchDemo {
 
         // should rename the context for future tests
         //added more
+        // 9/4/2017
         context.textFile("test")
                 .flatMap(text -> Arrays.asList(text.split(" ")).iterator())
                 .mapToPair(word ->new Tuple2<>(word,1))
