@@ -6,7 +6,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
 /**
  * Created by henok on 9/4/20177.
- * Needs correction ? ? ?
+ * Needs correction ? ? ? ?
  */
 public class StreamingDemo {
 
